@@ -205,3 +205,9 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+1.mp3
+1.png
+2.mp3
+3.mp3
+output.mp4
