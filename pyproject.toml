@@ -7,3 +7,12 @@ requires-python = ">=3.12"
 dependencies = [
     "moviepy>=2.2.1",
 ]
+
+[tool.black]
+line-length = 120
+
+[dependency-groups]
+dev = [
+    "black>=25.1.0",
+    "ruff>=0.12.7",
+]

@@ -1,4 +1,4 @@
-from moviepy import AudioFileClip, concatenate_audioclips, ImageClip
+from moviepy import AudioFileClip, ImageClip, concatenate_audioclips
 
 
 def main():
@@ -9,7 +9,7 @@ def main():
 
     clips = [AudioFileClip(f) for f in audio_files]
     combined = concatenate_audioclips(clips)
-    image_clip = ImageClip(image_file).resized(new_size).with_duration(combined.duration)  # noqa
+    image_clip = ImageClip(image_file).resized(new_size).with_duration(combined.duration)
     final = image_clip.with_audio(combined)
     final.write_videofile(
         output_file,
