@@ -14,7 +14,7 @@ def main():
     final.write_videofile(
         output_file,
         codec="libx264",
-        audio_codec="aac",
+        audio_codec="pcm_s16le",
         fps=1,
     )
 
